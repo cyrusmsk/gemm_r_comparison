@@ -21,7 +21,7 @@
 #else
   //#define N 4096
   // L1 cache is 32 kB
-  #define N 2048 // 2048*2048*4*2 = 32 MB
+  #define N 3000 // 2048*2048*4*2 = 32 MB
   // 8*768*4 = 24 kB
 #endif
 
@@ -132,7 +132,7 @@ int main() {
     }
   }
 
-  for (int i = 0; i < 4000; i++) {
+  for (int i = 0; i < 20; i++) {
     memset(C, 0, N*N*sizeof(float));
 
 #if NTHREADS != 1 

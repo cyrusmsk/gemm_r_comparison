@@ -1,0 +1,14 @@
+{
+	"authors": [
+		"Serg"
+	],
+	"copyright": "Copyright © 2023, Serg",
+	"dependencies": {
+		"lubeck": "~>1.5.3"
+	},
+    "dflags-ldc": ["-mcpu=native"],
+    "libs": ["blas", "lapack"],
+	"description": "matmul with lubeck",
+	"license": "MIT",
+	"name": "r_d"
+}
